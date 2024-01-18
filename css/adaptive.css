@@ -1,0 +1,6 @@
+@media (max-width: 1200px) {
+  .goodDeal__product {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

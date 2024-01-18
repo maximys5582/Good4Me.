@@ -74,6 +74,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+@media (max-width: 1200px) {
+  .goodDeal__product {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 body {
   font-family: "Jost", sans-serif;
   font-size: clamp(12px, 1vw, 14px);
@@ -123,7 +129,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 0;
+  padding: clamp(10px, 3vw, 30px) 0;
 }
 .header__menu__flex {
   display: -webkit-box;
@@ -171,6 +177,7 @@ body {
   transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
   transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  margin-bottom: clamp(30px, 20vw, 70px);
 }
 
 .slide {
@@ -188,7 +195,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  height: clamp(200px, 33vw, 840px);
+  height: clamp(200px, 45vw, 550px);
   width: 100%;
 }
 .slide__botomImg {
@@ -229,7 +236,7 @@ body {
   color: #454545;
   max-width: clamp(180px, 35vw, 950px);
   line-height: clamp(13px, 2vw, 24px);
-  margin-bottom: clamp(16px, 4vw, 60px);
+  padding-bottom: clamp(16px, 4vw, 40px);
   font-size: clamp(10px, 1vw, 34px);
 }
 .slide__content__but {
@@ -259,5 +266,62 @@ body {
 }
 
 .slide:nth-child(3) {
-  background-color: #98fb98;
+  background-color: #fff6f6;
+  text-align: center;
+}
+
+#slide3 {
+  text-align: center;
+  margin: 0 auto;
+}
+#slide3__img {
+  max-width: clamp(150px, 50vw, 850px);
+  padding-top: 35px;
+}
+
+.goodDeal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.goodDeal__main-page {
+  text-align: center;
+}
+.goodDeal__title {
+  font-size: clamp(18px, 3vw, 36px);
+}
+.goodDeal__line {
+  margin: 15px auto;
+  border-bottom: 4px solid #F6623E;
+  max-width: 125px;
+}
+.goodDeal__discription {
+  font-size: clamp(10px, 1vw, 34px);
+  color: #454545;
+  margin-bottom: clamp(15px, 3vw, 30px);
+}
+.goodDeal__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-card__wrapper {
+  margin: 0 clamp(10px, 2vw, 25px) clamp(10px, 2vw, 25px);
+}
+.product-card__top-wrap {
+  background-color: #E8E8E8;
+  text-align: center;
+}
+.product-card__top-wrap img {
+  max-width: 210px;
+}
+.product-card__middle-wrap {
+  margin-top: 15px;
 }
